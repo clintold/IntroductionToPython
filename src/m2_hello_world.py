@@ -76,7 +76,7 @@ print('If in one yard there is milkshakes, but in the other some one is cracking
 print('3,607* 34,227','=',3607*34227)
 ########################################################################
 #
-# TODO: 5.
+# done: 5.
 #   Look at the list of files in this project to the left.
 #   Note that this file (m2_hello_world.py) is now displayed in a blue
 #   font color (if the file is highlighted select a different file so yu can
