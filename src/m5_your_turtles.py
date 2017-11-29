@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Luke Clinton
 """
 ########################################################################
-# TODO: 1.
+# Done.
 # On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# done: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -28,3 +28,33 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
+import rosegraphics as rg
+
+window = rg.TurtleWindow()
+luke= rg.SimpleTurtle('turtle')
+jayne = rg.SimpleTurtle('turtle')
+luke.pen = rg.Pen('green',10)
+jayne.pen = rg.Pen('pink',10)
+luke.speed = 10
+jayne.speed = 10
+size= 5
+
+for k in range (10):
+
+    luke.draw_regular_polygon(k + 3, 10*k + 100)
+
+    luke.pen_up()
+    luke.right(45)
+    luke.forward(10)
+    luke.left(45)
+
+    luke.pen_down()
+
+    jayne.draw_circle(10*k)
+    jayne.pen_up()
+    jayne.right(45)
+    jayne.forward(10)
+    jayne.left(45)
+    jayne.pen_down()
+
+window.close_on_mouse_click()
