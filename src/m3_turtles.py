@@ -10,11 +10,11 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Luke Clinton.
 """
 ########################################################################
 #
-# TODO: 1.
+# Done: 1.
 #  (Yes, that means for YOU to DO things per these instructions:)
 #
 # On Line 13 above, replace  PUT_YOUR_OWN_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
 #   then selector  Mark Directory As --> Sources Root
@@ -74,10 +74,17 @@ matt.backward(50)
 matt.left(90)
 matt.forward(50)
 
-
+luke = rg.SimpleTurtle('turtle')
+luke.pen = rg.Pen('green',100)
+luke.speed = 5
+luke.backward(10)
+luke.right(45)
+luke.forward(10)
+luke. right(135)
+luke.forward(100)
 ########################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   Add a few more line of your own code above to make one of the
 #   existing Turtles move some more and/or have different
 #   characteristics.
